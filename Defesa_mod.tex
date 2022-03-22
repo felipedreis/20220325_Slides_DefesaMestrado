@@ -1,0 +1,100 @@
+
+
+\documentclass[fleqn,]{beamer}
+
+%Aparencia:
+%\usetheme{Darmstadt}  // este � uma outra tipagem de modelo de Slide
+\usetheme{Warsaw}
+\usecolortheme[named=blue]{structure}
+\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}
+
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+%pacotes
+%\usepackage{algorithm}
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+%\usepackage[portuguese,ruled]{algorithm2e}
+%\usepackage[portuguese]{algorithm2e}
+%\usepackage[brazil,  english]{babel}
+%\usepackage[latin1]{inputenc}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\usepackage{amsmath,amsfonts,amssymb,latexsym}
+\usepackage{hyperref}
+\usepackage{comment}
+\usepackage{subfigure}
+\usepackage{ragged2e}
+\usepackage{color}
+\usepackage{abntex2cite}
+
+%\usepackage{comandos}
+%\usepackage{fix-cm}
+	%\fontsize{100}{120}\selectfont
+%\usepackage{bm}
+%\usepackage{multirow}
+%\usepackage{eqnarray}
+
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+% Setup TikZ
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\tikzstyle{block}=[draw opacity=0.7,line width=1.0cm]
+\linespread{1.0}
+\usepackage{comment}
+
+
+% Author, Title, etc.
+
+\title[Mestrado em Modelagem Matemática e Computacional]{EFEITO DA HIBRIDIZAÇÃO DINÂMICA DE META-HEURÍSTICAS EM UM SISTEMA MULTIAGENTES DISTRIBUÍDO E ESCALÁVEL}
+
+\author[Felipe Duarte dos Reis]{\textbf{Felipe Duarte dos Reis}\\ [0.3cm] Orientador: Prof. Dr. Henrique Elias Borges \\
+Co-orientador: Prof. Dr. Rogério Martins Gomes \\
+[0.1cm]\\
+\scriptsize{Programa de Pós-Graduação em Modelagem Matemática e Computacional\\ Centro Federal de Educação Tecnológica de Minas Gerais}}
+\date{Março de 2022}
+
+%INICIO
+\begin{document}
+
+%---> Capa
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+%---> Sumario
+\begin{frame}{Sumário}
+\scriptsize  \tableofcontents
+\end{frame}
+
+\include{elementos-textuais/01_introducao}
+\include{elementos-textuais/02_desenvolvimento}
+\include{elementos-textuais/03_hipoteses}
+\include{elementos-textuais/04_escalabilidade}
+\include{elementos-textuais/05_diversidade}
+\include{elementos-textuais/06_conclusao}
+
+\end{document}
